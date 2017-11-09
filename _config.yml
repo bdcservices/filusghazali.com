@@ -1,0 +1,15 @@
+# Site settings
+title: Filus Ghazali
+owner: Filus Ghazali
+email: filusdp@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Filus Ghazali website
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://www.filusghazali.com" # the base hostname & protocol for your site
+twitter_username: 
+github_username: 
+
+featured_post_count: 4
+
+# Build settings
+markdown: kramdown
