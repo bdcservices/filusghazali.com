@@ -189,7 +189,7 @@ body {
 }
 #timeline .demo-card .head .timeline-box-title {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: inherit;
   letter-spacing: 2px;
   margin: 0;
@@ -203,12 +203,12 @@ body {
 }
 #timeline .demo-card .head .timeline-box-title span {
   display: block;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   margin: 0;
 }
 @media (min-width: 480px) {
   #timeline .demo-card .head .timeline-box-title span {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
 #timeline .demo-card .body {
