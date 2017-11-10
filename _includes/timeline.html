@@ -1,71 +1,26 @@
-<section id=timeline>
-	<h1>{{ site.data.timeline.title }}</h1>
-	<p class="leader">{{ site.data.timeline.leader }}</p>
+<head>
+	<link rel="stylesheet" href="{{ "/css/timeline.css" | prepend: site.baseurl }}"/>
+</head>
+{% assign timeline_data = site.data.timeline' %}
+<section class="timeline-section" id=timeline>
+	<h2 class="title">{{ timeline_data.title }}</h2>
+	<p class="leader">{{ timeline_data.leader }}</p>
 	<div class="demo-card-wrapper">
-		<div class="demo-card demo-card--step1">
-			<div class="head">
-				<div class="number-box">
-					<span>01</span>
-				</div>
-				<h2><span class="small">Subtitle</span> Technology</h2>
-			</div>
-			<div class="body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-				<img src="http://placehold.it/1000x500" alt="Graphic">
-			</div>
-		</div>
 
-		<div class="demo-card demo-card--step2">
-			<div class="head">
-				<div class="number-box">
-					<span>02</span>
-				</div>
-				<h2><span class="small">Subtitle</span> Confidence</h2>
-			</div>
-			<div class="body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-				<img src="http://placehold.it/1000x500" alt="Graphic">
-			</div>
-		</div>
+		{% for item in timeline_data.timeline-item %}
 
-		<div class="demo-card demo-card--step3">
+		<div class="demo-card demo-card--step{{ item.step }}">
 			<div class="head">
 				<div class="number-box">
-					<span>03</span>
+					<span>{{ item.number_display }}</span>
 				</div>
-				<h2><span class="small">Subtitle</span> Adaptation</h2>
+				<h2 class="timeline-box-title"><span class="small">{{ item.subtitle }}</span>{{ item.title }}</h2>
 			</div>
 			<div class="body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-				<img src="http://placehold.it/1000x500" alt="Graphic">
+				<p>{{ item.description }}</p>
+				<img src="{{ item.image }}" alt="Graphic">
 			</div>
 		</div>
-
-		<div class="demo-card demo-card--step4">
-			<div class="head">
-				<div class="number-box">
-					<span>04</span>
-				</div>
-				<h2><span class="small">Subtitle</span> Consistency</h2>
-			</div>
-			<div class="body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-				<img src="http://placehold.it/1000x500" alt="Graphic">
-			</div>
-		</div>
-
-		<div class="demo-card demo-card--step5">
-			<div class="head">
-				<div class="number-box">
-					<span>05</span>
-				</div>
-				<h2><span class="small">Subtitle</span> Conversion</h2>
-			</div>
-			<div class="body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-				<img src="http://placehold.it/1000x500" alt="Graphic">
-			</div>
-		</div>
-    
+		{% endfor %}
 	</div>
 </section>

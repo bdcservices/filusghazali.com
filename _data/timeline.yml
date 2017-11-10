@@ -1,2 +1,57 @@
-title: A Flexbox Timeline
-leader: All cards must be the same height and width for space calculations on large screens.
+title: FIlus's Achievements
+leader: 
+timeline-item:
+- step: 1
+  number_display: 2004
+  title:  PHSM <br/>Film Festival M’sia
+  subtitle: Nominated for the Best Cinematography
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam
+  image: http://placehold.it/1000x500
+- step: 2
+  number_display: 2004
+  title:  PHSM <br/>M’sia Tech.Film Festival
+  subtitle: Best Cinematography
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam
+  image: http://placehold.it/1000x500
+- step: 3
+  number_display: 2004
+  title: PHSM2 <br/>Estepona Film Festival
+  subtitle: Best Cinematography
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam
+  image: http://placehold.it/1000x500
+- step: 4
+  number_display: 2005
+  title: PHSM2 <br/>Estepona Film Festival
+  subtitle: Best Cinematography
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam
+  image: http://placehold.it/1000x500
+- step: 5
+  number_display: 2005
+  title: Asia Pacific <br/>Film Festival
+  subtitle: Best Short Film “Pua Kumbu”
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam
+  image: http://placehold.it/1000x500
+- step: 6
+  number_display: 2006
+  title: PHSM2 <br/>FFM19
+  subtitle: Nominated Best Cinematography
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam
+  image: http://placehold.it/1000x500
+- step: 7
+  number_display: 2006
+  title: PHSM2 <br/>M’sia Tech.Film Festival
+  subtitle: Best Cinematography
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam
+  image: http://placehold.it/1000x500
+- step: 8
+  number_display: 2009
+  title: Cicakman 2 <br/>FFM22
+  subtitle: Nominated Best Cinematography
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam
+  image: http://placehold.it/1000x500
+- step: 9
+  number_display: 2014
+  title: Tanda Putera <br/>FFM26
+  subtitle: Nominated Best Cinematography
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam
+  image: http://placehold.it/1000x500
