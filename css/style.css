@@ -312,6 +312,24 @@
 				top: -0.2em;
 			}
 
+			.icon.circle.fa-comments {
+				background: #36c431;
+				color: white;
+			}
+
+				.icon.circle.fa-comments:hover {
+					background: #36c431;
+				}
+			
+			.icon.circle.fa-envelope-o {
+				background: #c44231;
+				color: white;
+			}
+	
+					.icon.circle.fa-envelope-o:hover {
+						background: #c44231;
+					}
+			
 			.icon.circle.fa-twitter {
 				background: #70aecd;
 				color: white;
