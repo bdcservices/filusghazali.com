@@ -8,8 +8,12 @@ layout: default
         <h2>{{ site.owner-short }}'s <strong>Blog</strong></h2>
     </header>
     <section class="wrapper style4 container">
+        {% assign show_post = site.posts | where:'hidden', false %}
+        {% if show_post.size == 0 %}
+            <h2><center>No Post from {{ site.owner-short }} yet, stay tune! </center></h2>
+        {% else %}
         <ul class="posts">
-          {% for post in site.posts %}
+            {% for post in show_post %}
             <li class="wrapper {% if forloop.first %} style2 {% else %} style1 {% endif %}">
               <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 {{ post.excerpt }}
@@ -18,7 +22,8 @@ layout: default
                         <li><a href="{{ post.url }}" class="button">Read more</a></li>
                     </ul></section>
             </li>
-          {% endfor %}
+            {% endfor %}
+        {% endif %}
         </ul>
     </section>
 </article>

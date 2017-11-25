@@ -1,58 +1,20 @@
 <section class="wrapper style3 container special">
 	<header class="major">
-		<h2>Featured post from <strong>Filus Ghazali</strong></h2>
+		<h2>Featured Video from <strong>Filus Ghazali</strong></h2>
 	</header>
-
-	{% for number in site.featured_post_count %}
-		<h2>ROFL</h2>
-	{% endfor %}
-	
 	<div class="row">
+		{% for item in site.data.featured-video.video-item %}
 		<div class="6u">
 		
 			<section>
-				<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+					<iframe width="420" height="315" src="{{ item.url }}?color=white&theme=light"> </iframe>
 				<header>
-					<h3>A Really Fast Train</h3>
+					<h3>{{ item.title }}</h3>
 				</header>
-				<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+				<p>{{ item.description }}</p>
 			</section>
 
 		</div>
-		<div class="6u">
-		
-			<section>
-				<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-				<header>
-					<h3>An Airport Terminal</h3>
-				</header>
-				<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-			</section>
-
-		</div>
-	</div>
-	<div class="row">
-		<div class="6u">
-		
-			<section>
-				<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-				<header>
-					<h3>Hyperspace Travel</h3>
-				</header>
-				<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-			</section>
-
-		</div>
-		<div class="6u">
-		
-			<section>
-				<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-				<header>
-					<h3>And Another Train</h3>
-				</header>
-				<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-			</section>
-
-		</div>
+		{% endfor %}
 	</div>
 </section>

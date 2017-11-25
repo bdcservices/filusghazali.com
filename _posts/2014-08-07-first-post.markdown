@@ -3,6 +3,7 @@ layout: post
 title:  "Lorem Ipsum"
 date:   2014-08-31 14:36:23
 permalink: /first-post.html
+hidden: true
 ---
 <span class="image featured"><img src="/images/pic02.jpg" alt=""></span>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at metus augue. In fringilla nibh ac efficitur blandit. Nullam eu pretium mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur vulputate lacinia tortor, vel ultrices ligula. Etiam hendrerit aliquam tristique. Nulla tincidunt tortor id quam dignissim fermentum.
