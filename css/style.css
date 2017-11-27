@@ -173,6 +173,15 @@
 		padding-top: 3em;
 	}
 
+/* video */
+#video-reel	 {
+	height:600px;
+}
+
+#video-reel-featured	 {
+	height:330px;
+}
+
 /* Form */
 
 	input[type="text"],
@@ -321,6 +330,23 @@
 					background: #36c431;
 				}
 			
+			.icon.circle.fa-imdb {
+				background: #c4c231;
+				color: white;
+			}
+
+				.icon.circle.fa-imdb:hover {
+					background: #c4c231;
+				}
+
+			.icon.circle.fa-youtube {
+				background: #c43131;
+				color: white;
+			}
+
+				.icon.circle.fa-youtube:hover {
+					background: #c43131;
+				}
 			.icon.circle.fa-envelope-o {
 				background: #c44231;
 				color: white;

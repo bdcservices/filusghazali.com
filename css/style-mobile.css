@@ -144,6 +144,15 @@
 				display: none;
 			}
 
+/* video */
+#video-reel	 {
+	height:250px;
+}
+
+#video-reel-featured	 {
+	height:330px;
+}
+
 /* Main */
 
 	#main {

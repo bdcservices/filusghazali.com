@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<article id="main">
+    <header class="special container">
+        <span class="icon fa-mobile"></span>
+        <h2>{{ site.data.videolist.title }}</h2>
+    </header>
+    <section class="wrapper style4 container">
+        {% assign show_video = site.data.videolist.videos-item %}
+        {% if show_video.size == 0 %}
+            <h2><center>No Video Work from {{ site.owner-short }} yet, stay tune! </center></h2>
+        {% else %}
+        <ul class="posts" style="align">
+            {% for item in show_video %}
+            <li class="wrapper style1">
+                <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+                <div id="video-reel" class="embed-responsive embed-responsive-4by3">
+					{% if item.youtube %}
+						{% assign video-url = site.data.videolist.youtube-url | append: item.youtube %}
+					{% else %}
+						{% assign video-url = site.data.videolist.vimeo-url | append: item.vimeo %}
+					{% endif %}
+					<iframe class="embed-responsive-item" height="100%" width="100%" src="{{ video-url }}"> </iframe>
+                </div>
+                <br/>
+                <p style="text-align:center;">{{ item.description }}</p>
+            </li>
+            {% endfor %}
+        {% endif %}
+        </ul>
+    </section>
+</article>

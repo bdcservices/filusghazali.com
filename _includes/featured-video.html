@@ -1,0 +1,34 @@
+<section class="wrapper style3 container special">
+	<header class="major">
+		<h2>{{ site.data.videolist.title }}</h2>
+	</header>
+	<div class="row">
+		{% for item in site.data.videolist.videos-item %}
+			{% if forloop.index == 5 %}
+				{% break %}
+			{% endif %}
+		<div class="6u">
+			<section>
+				<header>
+					<h3 style="text-align:left"><a href="{{ video-url }}" target="_blank">{{ item.title }}</a></h3>
+				</header>
+				<div id="video-reel-featured" class="embed-responsive embed-responsive-4by3">
+					{% if item.youtube %}
+						{% assign video-url = site.data.videolist.youtube-url | append: item.youtube %}
+					{% else %}
+						{% assign video-url = site.data.videolist.vimeo-url | append: item.vimeo %}
+					{% endif %}
+					<iframe class="embed-responsive-item" height="90%" width="100%" src="{{ video-url }}"> </iframe>
+				</div>
+				<p style="text-align:center">{{ item.description }}</p>
+			</section>
+
+		</div>
+		{% endfor %}
+	</div>
+	<footer class="major">
+		<ul class="buttons">
+			<li><a href="/videos" class="button">{{ site.data.videolist.see_other_text}}</a></li>
+		</ul>
+	</footer>
+</section>
