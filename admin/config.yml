@@ -1,7 +1,10 @@
 backend:
-  name: bitbucket
+  name: git-gateway
   repo: btdcservices/filusghazali.com-website # Path to your GitHub repository
   branch: master # Branch to update (master by default)
+  site_domain: https://www.filusghazali.com
+  delay: 0.1
+
 
 media_folder: "images/uploads" # Folder where user uploaded files should go
 
