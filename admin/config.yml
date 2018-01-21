@@ -1,12 +1,12 @@
 backend:
   name: git-gateway
-  repo: bdcservices/filusghazali.com # Path to your GitHub repository
+  repo: "bdcservices/filusghazali.com" # Path to your GitHub repository
   branch: master # Branch to update (master by default)
   site_domain: https://www.filusghazali.com
   delay: 0.1
 
 
-media_folder: "images/uploads" # Folder where user uploaded files should go
+media_folder: "images" # Folder where user uploaded files should go
 
 collections:
   - name: "post" # Used in routes, e.g. /admin/collections/blog
@@ -17,12 +17,5 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm"}
       - {label: "Show Header Image?", name: "headerImage", widget: "boolean", default: false}
-      - {label: "Hide Post", name: "hidden", widget: "boolean", default: false}
-      - label: "Category"
-        name: "category"
-        widget: "select"
-        options: ['blog', 'project']
-        valueField: "string"
-        default: 'blog'
       - {label: "Featured Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
